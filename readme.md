@@ -1,4 +1,4 @@
-<p align="center"><strong>SIREG PMK LP3I MAKASSAR</strong></p>
+<p align="center"><strong>SIREG PMK LP3I MAKASSAR 2017</strong></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
