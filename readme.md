@@ -1,4 +1,4 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><strong>SIREG PMK LP3I MAKASSAR</strong></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -27,4 +27,4 @@ Jika ada masalah silahkan hubungi saya.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+SIREG PMK ini adalah open-source Licensi oleh [MIT license](http://opensource.org/licenses/MIT).
