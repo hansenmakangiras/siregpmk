@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/orders', function () {
+    // Access token has both "check-status" and "place-orders" scopes...
+})->middleware('scopes:check-status,place-orders');
