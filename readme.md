@@ -1,30 +1,38 @@
-## <p align="center"><strong>SIREG PMK LP3I MAKASSAR 2017</strong></p>
+# SIREG PMK LP3I Makassar
+## Setup
+- download/clone the git repository from
+  - `git clone https://github.com/paslandau/laravelexample.git`
+- navigate into the project folder
+  - `cd laravelexample`
+- make sure not to work directly on the master branch  
+  - `git checkout -b my_local_branch`
+- to prepare the vagrant configuration, run
+  - `vendor/bin/homestead make` or `vendor/bin/homestead.bat make` on Windows
+- adjust the `hosts` file and the newly created `Homestead.yaml` in the root of the repo according to your needs. Usually that includes:
+  - adjust `ip`
+    - make sure the `ip` is not already used in your local network
+  - add an entry to your host file
+    - `[IP] laravelexample.app` (e.g. `192.168.33.111 laravelexample.app`)
+    - location on Unix: `/etc/hosts`
+    - location on Windows: `C:\Windows\System32\drivers\etc`
+- adjust `folders` and `sites` mapping (optional; it should be set up correctly by default if you followed the steps above).
+  Watch out for the following:
+  - the `folders: - map: "[PATH]"` should point to the absolute path to the `cube` repository on your **local** machine
+  - the `folders: to: "[PATH]"` denotes the path on your **vagrant** machine that is mapped to the above mentioned path on your local machine,
+    so that you can access your local files within the vagrant box.
+  - the `sites: - map: "[HOSTNAME]"` denotes the hostname that the nginx is looking for to serve content on
+    - you _should_ adjust that to the hostname chosen for your hostfile (e.g. `laravelexample.app`) although it not necessary since nginx will even respond to another hostname
+  - the `sites: - to: "[PATH]"` denotes the absolute path withing the vagrant box that the above mentioned hostname uses as `root` path for content.
+    This should be the path to the `public` folder of this repository
+- start the vagrant box with `vagrant up`, ssh into it with `vagrant ssh`, switch to the project folder (by default, this should be `cd /home/vagrant/laravelexample/`) and install the 
+  project's dependencies
+  - `composer install`
+- setup laravel by generating an application key and setting up the .env file:
+  - php artisan key:generate
+  - `cp .env.example .env`
+- generate the meta data files for better code completion
+  - `php artisan ide-helper:meta`
+  - `php artisan ide-helper:generate`
+  - `php artisan ide-helper:model`
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About SIREG PMK
-
-Sistem ini dibuat menggunakan PHP Framework yaitu Laravel 5.4. Website ini ditujukan untuk para pengurus PMK LP3I sebagai media untuk mendaftarkan para mahasiswa baru, maupun yang lama, demi kebutuhan data yang akurat untuk kepentingan internal PMK. Seiring dengan berjalannya waktu nantinya sistem ini akan terus dikembangkan sehingga nantinya dapat memenuhi kebutuhan organisasi. Feature yang ada sistem 1.0 ini adalah :
-
-- Users [Register, Login, Forgot Password].
-- [Pendaftaran Mahasiswa].
-- CMS Untuk [Website PMK LP3I](https://pmklp3imks.org).
-
-Diharapkan juga bagi teman2 anggota pmk yang ingin membantu mengembangkan sistem ini silahkan di checkout repo ini.
-
-## Instalasi 
-
-1. Download zip atau checkout repo ini.
-2. Buka CMD (windows) ketik : composer install, tunggu sampai selesai.
-3. Terakir ketik di cmd : vagrant up. Done.
-
-Jika ada masalah silahkan hubungi saya. 
-
-## License
-
-SIREG PMK ini adalah open-source Licensi oleh [MIT license](http://opensource.org/licenses/MIT).
+You should now be able to open http://laravelexample.app/ in your browser and see the Laravel welcome page :)
