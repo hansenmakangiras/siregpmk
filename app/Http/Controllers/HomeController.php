@@ -26,16 +26,4 @@ class HomeController extends Controller
     {
         return view('home');
     }
-
-    public function testServerCreation()
-    {
-        Passport::actingAs(
-            factory(User::class)->create(),
-            ['create-servers']
-        );
-
-        $response = $this->post('/api/create-server');
-
-        $response->assertStatus(200);
-    }
 }
