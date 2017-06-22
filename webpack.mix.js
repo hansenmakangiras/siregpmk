@@ -13,4 +13,4 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
     .sass('resources/assets/sass/app.scss', 'public/css')
-    .js('https://js.pusher.com/4.0/pusher.min.js', 'public/js');
+    .js('resources/assets/js/pusher.min.js', 'public/js');

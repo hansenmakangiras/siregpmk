@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- resources/views/layouts/app.blade.php -->
 </head>
 <body>
     <div id="app">
