@@ -30,6 +30,10 @@ Vue.component(
     'passport-personal-access-tokens',
     require('./components/passport/PersonalAccessTokens.vue')
 );
+Vue.component(
+    'pushertest',
+    require('./components/pushertest.vue')
+);
 const app = new Vue({
     el: '#app'
 });
