@@ -1,26 +1,29 @@
 <!-- resources/views/chat.blade.php -->
 
-@extends('layouts.app')
+@extends('layouts.main')
 
-@section('content')
+@section('main-content')
+    <!-- Chat box -->
+    <div class="box box-success">
+        <div class="box-header">
+            <i class="fa fa-comments-o"></i>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Chats</div>
+            <h3 class="box-title">Chat</h3>
 
-                    <div class="panel-body">
-                        <chat-messages :messages="messages"></chat-messages>
-                    </div>
-                    <div class="panel-footer">
-                        <chat-form
-                                v-on:messagesent="addMessage"
-                                :user="{{ Auth::user() }}"
-                        ></chat-form>
-                    </div>
+            <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
+                <div class="btn-group" data-toggle="btn-toggle">
+                    <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-square text-green"></i>
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm"><i class="fa fa-square text-red"></i></button>
                 </div>
             </div>
         </div>
+        <div class="box-body chat" id="chat-box">
+            <!-- chat item -->
+            <chat-messages :messages="messages"></chat-messages>
+        </div>
+            <chat-form v-on:messagesent="addMessage" :user="{{ Auth::user() }}"></chat-form>
+        <!-- /.chat -->
     </div>
+    <!-- /.box (chat box) -->
 @endsection

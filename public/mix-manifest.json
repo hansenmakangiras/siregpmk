@@ -1,5 +1,14 @@
 {
   "/js/app.js": "/js/app.js",
   "/css/app.css": "/css/app.css",
-  "/js/pusher.min.js": "/js/pusher.min.js"
+  "/js/pusher.min.js": "/js/pusher.min.js",
+  "/css/chat.css": "/css/chat.css",
+  "/js/dashboard2.js": "/js/dashboard2.js",
+  "/js/dashboard.js": "/js/dashboard.js",
+  "/css/bootstrap.css": "/css/bootstrap.css",
+  "/css/adminlte-app.css": "/css/adminlte-app.css",
+  "/css/toastr.css": "/css/toastr.css",
+  "/js/app-landing.js": "/js/app-landing.js",
+  "/css/all.css": "/css/all.css",
+  "/css/all-landing.css": "/css/all-landing.css"
 }

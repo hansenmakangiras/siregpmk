@@ -15,43 +15,30 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component(
-    'passport-clients',
-    require('./components/passport/Clients.vue')
-);
-
-Vue.component(
-    'passport-authorized-clients',
-    require('./components/passport/AuthorizedClients.vue')
-);
-
-Vue.component(
-    'passport-personal-access-tokens',
-    require('./components/passport/PersonalAccessTokens.vue')
-);
-Vue.component('chat-messages', require('./components/ChatMessages.vue'));
+// Vue.component('example', require('./components/Example.vue'));
+Vue.component('authorized-clients', require('./components/passport/AuthorizedClients.vue'));
+Vue.component('clients', require('./components/passport/Clients.vue'));
+Vue.component('personal-access-token', require('./components/passport/PersonalAccessTokens.vue'));
 Vue.component('chat-form', require('./components/ChatForm.vue'));
+Vue.component('chat-messages', require('./components/ChatMessages.vue'));
+
 const app = new Vue({
     el: '#app',
     data: {
         messages: []
     },
+
     created() {
         this.fetchMessages();
-        Echo.private('chat')
-            .listen('MessageSent', (e) => {
-                this.messages.push({
-                    message: e.message.message,
-                    user: e.user
-                });
-            });
     },
+
     methods: {
         fetchMessages() {
-               axios.get('/messages').then(response => {
-                   this.messages = response.data;
-               });
-           },
+            axios.get('/messages').then(response => {
+                this.messages = response.data;
+            });
+        },
+
         addMessage(message) {
             this.messages.push(message);
 

@@ -1,3 +1,4 @@
+/* global _ Vue */
 
 window._ = require('lodash');
 
@@ -8,10 +9,14 @@ window._ = require('lodash');
  */
 
 try {
-    window.$ = window.jQuery = require('jquery');
+  window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap-sass');
+  require('bootstrap-less');
 } catch (e) {}
+
+require('admin-lte');
+window.toastr = require('toastr');
+require('icheck');
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -32,10 +37,23 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 let token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
-    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
-    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
+// Laravel AdminLTE vue components
+/*Vue.component('register-form', require('./components/auth/RegisterForm.vue'));
+ Vue.component('login-form', require('./components/auth/LoginForm.vue'));
+ Vue.component('email-reset-password-form', require('./components/auth/EmailResetPasswordForm.vue'));
+ Vue.component('reset-password-form', require('./components/auth/ResetPasswordForm.vue'));*/
+
+/**
+ * Vue is a modern JavaScript library for building interactive web interfaces
+ * using reactive data binding and reusable components. Vue's API is clean
+ * and simple, leaving you to focus on building your next great project.
+ */
+
+window.Vue = require('vue');
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
@@ -43,13 +61,14 @@ if (token) {
  * allows your team to easily build robust real-time web applications.
  */
 
-import Echo from 'laravel-echo'
+import Echo from 'laravel-echo';
 
 window.Pusher = require('pusher-js');
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: 'ba656ac0a549f9760ff7',
-    cluster: 'ap1',
-    encrypted: true
+    key: '0596da87adb1c06d07eb',
+    secret: '992986947bda81d4966e',
+    cluster:'ap1',
+    encryption: true
 });
