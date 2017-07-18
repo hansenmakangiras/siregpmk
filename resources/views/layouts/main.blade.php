@@ -3,7 +3,7 @@
 @section('htmlheader')
     @include('layouts.partials.htmlheader')
 @show
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue fixed">
 <div id="app" v-cloak>
     <div class="wrapper">
 

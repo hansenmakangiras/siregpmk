@@ -10,5 +10,10 @@
   "/css/toastr.css": "/css/toastr.css",
   "/js/app-landing.js": "/js/app-landing.js",
   "/css/all.css": "/css/all.css",
-  "/css/all-landing.css": "/css/all-landing.css"
+  "/css/all-landing.css": "/css/all-landing.css",
+  "/js/jquery.slimscroll.js": "/js/jquery.slimscroll.js",
+  "/js/slimscroll.js": "/js/slimscroll.js",
+  "/js/fastclick.js": "/js/fastclick.js",
+  "/js/jquery-ui.js": "/js/jquery-ui.js",
+  "/js/all.js": "/js/all.js"
 }

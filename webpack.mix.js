@@ -13,6 +13,12 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
     .js('resources/assets/js/app-landing.js', 'public/js/app-landing.js')
+    .combine([
+        'public/js/app.js',
+        'node_modules/admin-lte/plugins/slimScroll/jquery.slimscroll.js',
+        'node_modules/admin-lte/plugins/fastclick/fastclick.js'
+    ],'public/js/all.js')
+    // .js('node_modules/admin-lte/plugins/jqueryUI/jquery-ui.js', 'public/js/jquery-ui.js')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .less('node_modules/bootstrap-less/bootstrap/bootstrap.less', 'public/css/bootstrap.css')
     .less('resources/assets/less/adminlte-app.less','public/css/adminlte-app.css')
