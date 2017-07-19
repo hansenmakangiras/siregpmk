@@ -23447,7 +23447,7 @@ var app = new Vue({
 /* 16 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: spawn /home/vagrant/Code/siregpmk/node_modules/mozjpeg/vendor/cjpeg ENOENT\n    at exports._errnoException (util.js:1018:11)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:193:32)\n    at onErrorNT (internal/child_process.js:367:16)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)\n    at runLoaders (/home/vagrant/Code/siregpmk/node_modules/webpack/lib/NormalModule.js:192:19)\n    at /home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at /home/vagrant/Code/siregpmk/node_modules/img-loader/index.js:45:31");
 
 /***/ }),
 /* 17 */
@@ -23459,7 +23459,7 @@ var app = new Vue({
 /* 18 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Missing binding /home/vagrant/Code/siregpmk/node_modules/node-sass/vendor/linux-x64-48/binding.node\nNode Sass could not find a binding for your current environment: Linux 64-bit with Node.js 6.x\n\nFound bindings for the following environments:\n  - Windows 64-bit with Node.js 6.x\n\nThis usually happens because your environment has changed since running `npm install`.\nRun `npm rebuild node-sass --force` to build the binding for your current environment.\n    at module.exports (/home/vagrant/Code/siregpmk/node_modules/node-sass/lib/binding.js:15:13)\n    at Object.<anonymous> (/home/vagrant/Code/siregpmk/node_modules/node-sass/lib/index.js:14:35)\n    at Module._compile (module.js:570:32)\n    at Object.Module._extensions..js (module.js:579:10)\n    at Module.load (module.js:487:32)\n    at tryModuleLoad (module.js:446:12)\n    at Function.Module._load (module.js:438:3)\n    at Module.require (module.js:497:17)\n    at require (internal/module.js:20:19)\n    at Object.<anonymous> (/home/vagrant/Code/siregpmk/node_modules/sass-loader/lib/loader.js:3:14)\n    at Module._compile (module.js:570:32)\n    at Object.Module._extensions..js (module.js:579:10)\n    at Module.load (module.js:487:32)\n    at tryModuleLoad (module.js:446:12)\n    at Function.Module._load (module.js:438:3)\n    at Module.require (module.js:497:17)\n    at require (internal/module.js:20:19)\n    at loadLoader (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/loadLoader.js:13:17)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:165:10)\n    at /home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:173:18\n    at loadLoader (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/loadLoader.js:36:3)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:165:10)\n    at /home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:173:18\n    at loadLoader (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/loadLoader.js:36:3)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:165:10)\n    at /home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:173:18\n    at loadLoader (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/loadLoader.js:36:3)\n    at runLoaders (/home/vagrant/Code/siregpmk/node_modules/webpack/lib/NormalModule.js:192:19)\n    at /home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:170:18\n    at loadLoader (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/loadLoader.js:27:11)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:165:10)\n    at /home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:173:18\n    at loadLoader (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/loadLoader.js:36:3)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:165:10)\n    at /home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:173:18\n    at loadLoader (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/loadLoader.js:36:3)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:165:10)\n    at /home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:173:18\n    at loadLoader (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/loadLoader.js:36:3)\n    at iteratePitchingLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at runLoaders (/home/vagrant/Code/siregpmk/node_modules/loader-runner/lib/LoaderRunner.js:362:2)\n    at NormalModule.doBuild (/home/vagrant/Code/siregpmk/node_modules/webpack/lib/NormalModule.js:179:3)\n    at NormalModule.build (/home/vagrant/Code/siregpmk/node_modules/webpack/lib/NormalModule.js:268:15)\n    at Compilation.buildModule (/home/vagrant/Code/siregpmk/node_modules/webpack/lib/Compilation.js:142:10)\n    at moduleFactory.create (/home/vagrant/Code/siregpmk/node_modules/webpack/lib/Compilation.js:429:9)\n    at /home/vagrant/Code/siregpmk/node_modules/webpack/lib/NormalModuleFactory.js:251:4\n    at /home/vagrant/Code/siregpmk/node_modules/webpack/lib/NormalModuleFactory.js:93:13\n    at /home/vagrant/Code/siregpmk/node_modules/tapable/lib/Tapable.js:204:11\n    at NormalModuleFactory.params.normalModuleFactory.plugin (/home/vagrant/Code/siregpmk/node_modules/webpack/lib/CompatibilityPlugin.js:52:5)\n    at NormalModuleFactory.applyPluginsAsyncWaterfall (/home/vagrant/Code/siregpmk/node_modules/tapable/lib/Tapable.js:208:13)\n    at onDoneResolving (/home/vagrant/Code/siregpmk/node_modules/webpack/lib/NormalModuleFactory.js:68:11)\n    at onDoneResolving (/home/vagrant/Code/siregpmk/node_modules/webpack/lib/NormalModuleFactory.js:197:6)\n    at _combinedTickCallback (internal/process/next_tick.js:73:7)");
 
 /***/ }),
 /* 19 */
@@ -48461,7 +48461,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 );
-Component.options.__file = "D:\\Webserver\\Web\\siregpmk\\resources\\assets\\js\\components\\ChatForm.vue";
+Component.options.__file = "/home/vagrant/Code/siregpmk/resources/assets/js/components/ChatForm.vue";
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ChatForm.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48495,7 +48495,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 );
-Component.options.__file = "D:\\Webserver\\Web\\siregpmk\\resources\\assets\\js\\components\\ChatMessages.vue";
+Component.options.__file = "/home/vagrant/Code/siregpmk/resources/assets/js/components/ChatMessages.vue";
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ChatMessages.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48533,7 +48533,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 );
-Component.options.__file = "D:\\Webserver\\Web\\siregpmk\\resources\\assets\\js\\components\\passport\\AuthorizedClients.vue";
+Component.options.__file = "/home/vagrant/Code/siregpmk/resources/assets/js/components/passport/AuthorizedClients.vue";
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] AuthorizedClients.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48571,7 +48571,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 );
-Component.options.__file = "D:\\Webserver\\Web\\siregpmk\\resources\\assets\\js\\components\\passport\\Clients.vue";
+Component.options.__file = "/home/vagrant/Code/siregpmk/resources/assets/js/components/passport/Clients.vue";
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Clients.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48609,7 +48609,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 );
-Component.options.__file = "D:\\Webserver\\Web\\siregpmk\\resources\\assets\\js\\components\\passport\\PersonalAccessTokens.vue";
+Component.options.__file = "/home/vagrant/Code/siregpmk/resources/assets/js/components/passport/PersonalAccessTokens.vue";
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] PersonalAccessTokens.vue: functional components are not supported with templates, they should use render functions.")}
 
